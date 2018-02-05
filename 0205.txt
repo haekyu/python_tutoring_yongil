@@ -1,0 +1,337 @@
+- str fmt
+	- 'mmmmmm   %d sssss %r' % (1, True)
+		== 'mmmmmm   1 sssss True'
+	- idx, lst[idx]
+		print('idx=', idx, 'e=', lst[idx])
+		print('idx=%d, e=%lf' % (idx, lst[idx]))
+	- %d == int
+	- %lf == float
+	- %s == string
+	- %r == bool
+- 함수
+	def 함수이름(인풋1, 인풋2, 인풋3):
+		민아람ㅇ리ㅏㅂ자ㅜ머우ㅕ무나ㅓ우ㅕㅣ주마ㅓㅇㄴ륌나여루
+		ㄴㅇㄹㄴㅇㄹㅇㄴㄹ
+		ㄴㅇㄹㄴㅇㄹ
+		ㄴㅇㄹㄴㅇㄹ
+		ㄴㅇㄹㄴㅇㄹ
+		ㄴㅇㄹㄴㅇ
+		return 아웃풋1, 아웃풋2, ....
+	
+	def g(x, y):
+	    a = x + y
+	    b = x * y
+	    c = x - y
+	    return a, b, c
+
+
+	result = g(3, 3)
+	print(result)
+	print(result[1])
+
+	r1, r2, r3 = g(3, 3)
+	print(r2)
+
+- 루프문
+	- 변칙
+		- break
+			== 중도 멈춤
+		- continue
+			== skip
+	- for
+		- enumerate
+			for e in lst:
+				ssdf
+			for idx in range(len(lst)):
+				sdfsdf
+
+			for idx, e in enumerate(lst):
+				sfsdfsdfs
+		- zip
+			: sequence를 묶어서 한꺼번에 이터레이션 돌고 싶을 때
+			: sequence 들의 길이가 같아야 함
+
+			for i1, i2, ..... in zip(s1, s2, ....):
+				sdfsdfds
+
+			name = ['철수', '영희', '영수']
+			age = [1, 2, 3]
+			place = ['aaa', 'bbb', 'ccc']
+
+			for n, a, p in zip(name, age, place):
+			    print('이름=', n, '나이=', a, '거주지=', p)
+		for iterator in sequence:
+			do
+		- 자주 쓰는 유형
+			for i in range(from이상, to미만):
+				do
+			--> stepsize 1
+
+			for i in range(to미만):
+				do
+			--> from 0
+
+			for i in range(from이상, to미만, stepsize):
+				do
+
+			for e in lst:
+				sfsdf
+
+	- while
+
+
+		while 조건:
+			do
+
+		n = 0
+		while n < 10:
+			print(n)
+			n = n + 1
+
+	
+
+
+- 조건문
+	if 조건:
+		do
+
+	if 조건:
+		do
+	else:
+		do2
+
+	if 조건1:
+		do1
+	elif 조건2:
+		do2
+	else:
+		do3
+
+
+	만약에 x가 5 의 배수이면 ~~~ 하고
+	x 가 7의 배수이면 ~~~ 하자
+	x 가 8의 배수이면 ~~~~  하고
+	아무것도 아니면 ~~~ 하자
+
+- list
+	+ lst = [1, 2, [0, [[[[]]]], 'a'], 4, 'a', 2, 3, 3.4]
+	+ list2 = [2, 1, 3, 4, 5]
+	+ []
+	+ , 로 element 구분
+	+ +
+	+ *
+	+ len(lst)
+	+ list[0]
+	+ 2번째부터 3번째
+
+- 언어
+	+ c / c++
+		- 머신스러움
+		- OS (widows / macos / linux ...) 
+		- 파일시스템
+	+ python
+		- 자유롭고
+		- 쉽고 
+		- 머신러닝
+	+ java
+		- class
+	+ ocaml / scheme / lisp
+		- 함수형언어
+		- 주식 / 트레이딩
+	+ R
+		- 통계....
+
+- 변수
+	- 변수 이름 붙이는 규칙
+	- 영어 + 숫자 + 언더바
+		- 영어 먼저!
+		- 대소문자 구분
+	- asd23948729347______2342938
+	- 언더바는 띄어쓰기 하고 싶을 때
+		- number_of_something
+		- numberOfSomething
+	- 줄여쓰기
+		- 모음 생략
+		- nmbr_of_smthng
+		- num_of_sth
+	- 숫자
+		- 2 (== to)
+		- str(sdfsdf) -> int2str()
+	- >>> x = 3
+		>>> x = "3"
+		>>> x = 234.5
+
+- General 연산
+	- merbership?
+		- member다 아니다
+		- in / not in
+		- lst = [1, 2, 10, 11]
+			1 은 lst의 멤버인가?
+			1 in lst
+			>>> 1111 not in lst
+			True
+			>>> not(1111 in lst)
+			True
+			>>> "a" in s
+			True
+			>>> "abc" in s
+			True
+	- +=
+	- *= 
+	- -=
+	- /=
+	- %=
+	- //=
+	- = 
+		: assign == define == 값을 대입
+		: x = 3
+		: f = 0234023
+	- ==
+		: equals?
+		: 3 == 3 > True
+	- !=
+		: not equals?
+		: 3 != 3 > False
+		: not (3 == 3)
+	- >
+		: 3 > 4 == False
+		: 문자열도 가능 (사전배열 순서상 비교)
+		: "abc" > "aaa" == ?
+		: >>> "가나다" > "나다라"
+			False
+			>>> "가나다" < "나다라"
+			True
+		: Bool의 대소비교는 0 / 1 로
+			True > False? == True
+		: True >= False?
+		>>> True <= False
+			False
+	- <
+	- >=
+	- <=
+- 형 변환
+	- str(123) == "123"
+	- int("123") == 123
+	- float(123) == 123.0
+	- int(123.0) == 123
+		+ >>> int(123.7)
+			123
+			>>> round(123.7)
+			124
+			>>> round(123.723423, 3)
+			123.723
+	- 123 -> "123"
+	- "123" -> 123
+	- 123 -> 123.0
+	- 123.0 -> 123
+- primitive data type 의 기본 연산
+	- Boolean
+		+ not (True) == False
+		+ and (교집합, *)
+			- True and True == True 
+			- True and False == False
+			- False and True == False
+			- False and False == False
+		+ or (합집합, +)
+			- True or True == True
+			- True or False == True
+			- False or True == True
+			- False or False == False
+		+ 예시
+			>>> not 1
+			False
+			>>> not 0
+			True
+			>>> 1 and 1
+			1
+			>>> 1 and 0
+			0
+	- 숫자 (int, float)
+		+ 사칙 연산: +, -, *, /
+		+ modular: %, ~으로 나눈 나머지
+		+ 몫: //
+	- string
+		+ + : 두 스트링을 붙이기 (concatenate)
+		+ * : 반복하기
+			- >>> "abc" * 3
+				'abcabcabc'
+		+ length
+			- len()
+		+ 위치 / 번째
+			- index
+				== 번째를 나타내는 숫자
+				!!! 0부터 시작
+			- "abcdef"[0] == "a"
+		+ indexing
+			- index를 인풋으로 주고 index 번째의 문자를 꺼내오는 행위
+			- "abcdef"[0] == "a"
+		+ slicing
+			- index 범위 : [from 이상: to 미만]
+			- s = 'abcdef'
+				>>> s[0:2+1]
+				'abc'
+		+ index 가져오기
+
+			- 문자를 인풋으로 주고, 그 문자의 index를 가져오는 함수
+			- index("내가 원하는 문자")
+				>>> s.index("c")
+				2
+- 데이터 타입
+	+ primitive data type
+		- 숫자
+			+ 정수
+				- int
+					+ 0, -3, 2, 1, ..
+			+ 실수
+				- float
+					+ 0.0, 4.2, -93.34234
+		- 문자
+			+ string
+				- "abc", "234", "ahsdkfjh87364872648ahjk", "234!!!"
+		- 참거짓
+			+ Boolean or Bool
+			+ True == 1
+			+ False == 0
+
+	+ series data type
+		- list, tuple, array
+	+ 디자인한 data type
+		- class
+
+- 오늘
+	+ 기본적
+		- 알고리즘 : 인풋 + 연산 -> 아웃풋	
+		- 데이터 유형 (data type)
+			- 숫자 , 문자, Boolean
+		- 연산
+	+ 복잡한 데이터 유형 
+		(Series data type)
+			- list
+			- tuple
+			- array
+	+ 조건문
+	+ 루프문
+	+ 함수
+
+
+
+- 박해규
+- 배용일
+
+
+
+
+- 검색기능
+- 기본적인 라이브러리
+	+ 수치
+
+
+
+- list
+- array
+	+ numpy
+	+ 수치적인 series data?
+- numpy
+- 재귀함수
+- sort
+
