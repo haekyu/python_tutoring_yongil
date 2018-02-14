@@ -1,25 +1,25 @@
 class cat:
-	def __init__(self):
-		# Atrributes
-		self.name = ""
-		self.age = 0
-		self.food_brain = {}
-		
-	# Functions
-	def set_name(self, new_name):
-		self.name = new_name
+    def __init__(self):
+        # Atrributes
+        self.name = ""
+        self.age = 0
+        self.food_brain = {}
+        
+    # Functions
+    def set_name(self, new_name):
+        self.name = new_name
 
-	def cry(self):
-		print('Meow')
+    def cry(self):
+        print('Meow')
 
-	def eat(self, food_name, food_taste):
-		self.food_brain[food_name] = food_taste
-		self.age += 1
+    def eat(self, food_name, food_taste):
+        self.food_brain[food_name] = food_taste
+        self.age += 1
 
-	def eat_many_foods(self, food_lst, taste_lst):
-		for i in range(len(food_lst)):
-			self.food_brain[food_lst[i]] = taste_lst[i]
-			self.age += 1
+    def eat_many_foods(self, food_lst, taste_lst):
+        for i in range(len(food_lst)):
+            self.food_brain[food_lst[i]] = taste_lst[i]
+            self.age += 1
 
 
 mycat = cat()
@@ -35,15 +35,15 @@ print(mycat.food_brain)
 '''
 # readline()
 with open('./coco.txt', 'r') as f:
-	while True:
-		line = f.readline()
-		print(line)
-		if line == "":
-			break
+    while True:
+        line = f.readline()
+        print(line)
+        if line == "":
+            break
 
 # readlines()
 with open('./coco.txt', 'r') as f:
-	lines = f.readlines()
+    lines = f.readlines()
 
 print(lines)
 # print('an' in 'can')
